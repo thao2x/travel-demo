@@ -126,7 +126,7 @@ section{
 }
 
 h4{
-    font-size: 3vmin;
+    font-size: 4vmin;
     color: #484872;
     margin: 20px auto;
 }
@@ -161,19 +161,20 @@ p{
 }
 
 .explore-content .line{
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
 }
 
 .explore-content h1{
     font-size: 7vmin;
-}
+}           
 
 .explore-content p{
     color: rgb(221, 221, 221);
+    padding-bottom: 20px;
 }
 
 .explore-content .ctn{
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .tours .row {
@@ -181,11 +182,11 @@ p{
 }
 
 .content-col{
-    width: 40%;
+    width: 50%;
 }
 
 .image-col{
-    width: 60%;
+    width: 50%;
 }
 
 .tours .image-gallery{
@@ -201,11 +202,13 @@ p{
 }
 
 .content-col h1{
+    text-align: center;
     font-size: 7vmin;
     color: #484872;
 }
 
 .content-col p{
+    text-align: center;
     padding: 0;
     margin: 30px auto;
 }
@@ -231,7 +234,7 @@ p{
 @media only screen and (max-width: 600px){
     .menu-btn{
         display: block;
-        width: 9%;
+        width: 8%;
     }
 
     .navbar{
@@ -269,8 +272,14 @@ p{
     }
 
     .row .col{
-        margin: 20px auto;
+        margin: 20px;
     }
+
+    .row .content-col{    
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .col img{
         max-width: 90%;
     }
@@ -278,12 +287,24 @@ p{
     /* explore */
     .explore-content{
         width: 100%;
+        padding: 0;
+    }
+
+    .explore-content h1{
+        text-align: center;
+    }
+
+    .explore-content p{
+        text-align: center;
     }
 
     .tours .col{
         width: 100%;
     }
 
+    .tours .row{
+        margin: 0;
+    }
     .image-gallery{
         justify-content: center;
         align-items: center;
