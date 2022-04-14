@@ -12,6 +12,7 @@ ul{
 
 body, html{
     overflow-x: hidden; /* tràn viền (mất thanh cuộn) */
+    scroll-behavior: smooth ;
 }
 
 /* Navbar */
