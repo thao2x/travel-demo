@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body, html{
+    overflow-x: hidden; /* tràn viền (mất thanh cuộn) */
+}
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #ffff;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.active{
+    color: rgb(207, 52, 52);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/header-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: #ffff;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(207, 52, 52);
+    margin: 10px auto;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: rgb(207, 52, 52);
+    border-radius: 30px;
+    color: #fff;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* enent */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #494992;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display:flex ;
+    flex-direction: column; /* iteam xếp theo chiều ngang */
+    align-items: center;
+}
+
+.events .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0 40px;
+}
+
+.events .ctn{
+    margin-top: 30px;
+}
+
+.explore{
+    width: 100%;
+    height: 80vh;
+    background-image: url('./img/bg2.png');
+    background-position: center;
+    background-size: cover; /* ảnh được co để vừa với phần tử chứa, tuy nhiên ảnh bị cắt nếu kích thước không cùng tỷ lệ với phần tử chứa. */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content .line{
+    margin-bottom: 50px;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+}
+
+.explore-content p{
+    color: rgb(221, 221, 221);
+}
+
+.explore-content .ctn{
+    margin-top: 40px;
+}
+
+.tours .row {
+    margin: 45px;
+}
+
+.content-col{
+    width: 40%;
+}
+
+.image-col{
+    width: 60%;
+}
+
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.image-gallery img{
+    max-width: 250px;
+    margin: 10px;
+}
+
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* footer */
+
+/* .footer{
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+
+.footer p{
+    color: #fff;
+    margin: 20px auto;
+    padding: 20px auto;
+} */
+
+/* mobile */
+@media only screen and (max-width: 600px){
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.7s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    /* events */
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+
+    /* explore */
+    .explore-content{
+        width: 100%;
+    }
+
+    .tours .col{
+        width: 100%;
+    }
+
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img{
+        width: 90%;
+    }
+}
+
+/* animations */
+img{
+    transition: tranform .5s ease-in;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.ctn:hover{
+    background: #fff;
+    color: rgb(207, 52, 52);
+}
