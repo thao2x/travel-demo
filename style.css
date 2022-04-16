@@ -215,7 +215,7 @@ p{
 
 /* footer */
 
-/* .footer{
+section .footer{
     width: 100%;
     min-height: 200px;
     padding: 20px 80px;
@@ -228,10 +228,10 @@ p{
     color: #fff;
     margin: 20px auto;
     padding: 20px auto;
-} */
+}
 
 /* mobile */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 740px){
     .menu-btn{
         display: block;
         width: 8%;
