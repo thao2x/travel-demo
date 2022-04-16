@@ -267,6 +267,9 @@ section .footer{
     }
 
     /* events */
+    p {
+        text-align: center;
+    }
     .row{
         flex-direction: column;
     }
